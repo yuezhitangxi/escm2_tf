@@ -1,0 +1,34 @@
+{
+    "hyper_parameters": {
+        "sparse_feature_number": 737946,
+        "sparse_feature_dim": 12,
+        "num_field": 23,
+        "ctr_fc_sizes": [256, 64],
+        "cvr_fc_sizes": [256, 64],
+        "global_w": 0.5,
+        "counterfactual_w": 0.5,
+        "feature_size": 276,
+        "expert_num": 8,
+        "expert_size": 16,
+        "tower_size": 8,
+        "max_len": 3,
+        "optimizer": {
+            "class": "adam",
+            "learning_rate": 0.01
+        }
+    },
+    "runner": {
+        "batch_size": 1024,
+        "epochs": 10,
+        "log_steps": 10,
+        "counterfact_mode": "DR"
+    },
+    "data": {
+        "train_files": ["ali-ccp/train_data/traindata_10w.csv"],
+        "test_files": ["ali-ccp/test_data/testdata_10w.csv"]
+    },
+    "output": {
+        "model_save_path": "escm_model.keras"
+    }
+}
+    
