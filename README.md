@@ -13,5 +13,6 @@ sh run.sh
 3.切回模型目录,执行命令运行全量数据
 ```bash
 cd .. # 切回模型
-python train.py
+python train.py #训练escm2
+python train_rnn.py #训练rnn
 ```
